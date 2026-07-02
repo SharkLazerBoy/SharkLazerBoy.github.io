@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+    <style>
+      body{
+        background-color:#1fa5d1;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+      <h1>My Favorite Alan Walker Songs</h1>
+      <div id="plot"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wJnBTPUQS5A?si=ablmcm6Cqaq6hL6-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/60ItHLz5WEA?si=g_LxqVZoHSfsgDho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1-xGerv5FOk?si=PgRCYXWSPVMQBw8C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      <p><a href="index.html">Return to the homepage</a></p>
+      <hr>
+      <p>&copy; STEM Prep 2026</p>
+    </center>
+    <script>
+      var songs={"The Spectre","Faded","alone"};
+        var views=[1299535986,3991744201,1505391480];
+        var trace={
+          x:songs,
+          y:views,
+          type:"bar"
+        };
+        var daya=[trace];
+        var layout={title:"My Favorite Alan Walker Songs"
+        Plotly.newPlot("plot",data,layout);
+    </script>
+  </body>
+</html>
